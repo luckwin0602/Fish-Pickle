@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Fish Pickles - Premium Fish Pickle from Chinnamuttom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="" type="image/x-icon">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Leaflet CSS for interactive map -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="fish-icon">🐟</span>
+                <span class="brand">Golden Fish Pickles</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#location" class="nav-link">Location</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Golden Fish Pickles</h1>
+            <p class="hero-subtitle">Authentic Taste from Chinnamuttom</p>
+            <p class="hero-description">Handcrafted Fish Pickles with Traditional Flavors</p>
+            <button class="cta-button" id="orderNowBtn">Order Now</button>
+        </div>
+        <div class="fish-animation">
+            <div class="fish fish1">🐟</div>
+            <div class="fish fish2">🐟</div>
+            <div class="fish fish3">🐟</div>
+            <div class="fish fish4">🐟</div>
+        </div>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h3>Traditional Pickle Making Since 1985</h3>
+                    <p>
+                        Golden Fish Pickles has been crafting premium fish pickles in Chinnamuttom for over 35 years. 
+                        Our commitment to quality, traditional recipes, and fresh ingredients has made us the choice 
+                        of pickle enthusiasts across the region.
+                    </p>
+                    <p>
+                        Each jar is prepared with care, using only the finest fish and spices, ensuring an authentic 
+                        taste that takes you back to tradition with every bite.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="floating-card">
+                        <img src="./download.webp" alt="Factory Handcrafted Quality" class="about-factory-img">
+                        <p>Handcrafted Quality</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="1.jpg" alt="Classic Fish Pickle" class="product-image">
+                    <h3>Classic Fish Pickle</h3>
+                    <p class="product-description">Our signature blend with traditional spices</p>
+                    <div class="product-details">
+                        <span class="price">₹299</span>
+                        <span class="weight">500g</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="2.jpg" alt="Spicy Fish Pickle" class="product-image">
+                    <h3>Spicy Fish Pickle</h3>
+                    <p class="product-description">Extra spicy for those who love heat</p>
+                    <div class="product-details">
+                        <span class="price">₹329</span>
+                        <span class="weight">500g</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="3.jpg" alt="Lemon Fish Pickle" class="product-image">
+                    <h3>Lemon Fish Pickle</h3>
+                    <p class="product-description">Tangy and refreshing with fresh lemon</p>
+                    <div class="product-details">
+                        <span class="price">₹309</span>
+                        <span class="weight">500g</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="OIP.webp" alt="Premium Blend Fish Pickle" class="product-image">
+                    <h3>Premium Blend</h3>
+                    <p class="product-description">Mixed fish with exotic spices</p>
+                    <div class="product-details">
+                        <span class="price">₹399</span>
+                        <span class="weight">750g</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title">Visit Us in Chinnamuttom</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-card">
+                        <h3>📍 Our Address</h3>
+                        <p>Golden Fish Pickles Factory<br>Chinnamuttom, Kanyakumari<br>Tamilnadu, India</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>⏰ Operating Hours</h3>
+                        <p>Monday - Saturday: 9:00 AM - 6:00 PM<br>Sunday: 10:00 AM - 4:00 PM<br>Closed on Public Holidays</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📞 Contact</h3>
+                        <p>Phone: +91-484-2345678<br>Email: info@goldenfishpickles.com</p>
+                    </div>
+                </div>
+                <div id="map-container" class="map-container">
+                    <div id="map" class="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="order-modal">
+        <div class="order-modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>🐟 Place Your Order</h2>
+            
+            <div class="order-options">
+                <div class="order-option">
+                    <h3>Quick Order via WhatsApp</h3>
+                    <p>Chat directly with us on WhatsApp to place your order</p>
+                    <button class="whatsapp-btn" id="whatsappBtn">
+                        <span style="font-size: 1.3rem;">💬</span> Order on WhatsApp
+                    </button>
+                </div>
+
+                <div class="order-divider">OR</div>
+
+                <div class="order-option">
+                    <h3>Order Form</h3>
+                    <form id="orderForm" class="order-form">
+                        <div class="form-group">
+                            <label for="productSelect">Select Product *</label>
+                            <select id="productSelect" required>
+                                <option value="">-- Choose a product --</option>
+                                <option value="Classic Fish Pickle - ₹299">Classic Fish Pickle - ₹299 (500g)</option>
+                                <option value="Spicy Fish Pickle - ₹329">Spicy Fish Pickle - ₹329 (500g)</option>
+                                <option value="Lemon Fish Pickle - ₹309">Lemon Fish Pickle - ₹309 (500g)</option>
+                                <option value="Premium Blend - ₹399">Premium Blend - ₹399 (750g)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Quantity *</label>
+                            <div class="quantity-selector">
+                                <button type="button" class="qty-btn" id="qtyMinus">−</button>
+                                <input type="number" id="quantity" value="1" min="1" max="100" readonly>
+                                <button type="button" class="qty-btn" id="qtyPlus">+</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderName">Your Name *</label>
+                            <input type="text" id="orderName" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderPhone">Phone Number *</label>
+                            <input type="tel" id="orderPhone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderEmail">Email Address</label>
+                            <input type="email" id="orderEmail" placeholder="Enter your email (optional)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderAddress">Delivery Address *</label>
+                            <textarea id="orderAddress" placeholder="Enter your full delivery address" rows="3" required></textarea>
+                        </div>
+
+                        <div class="order-summary">
+                            <p><strong>Product:</strong> <span id="summaryProduct">-</span></p>
+                            <p><strong>Quantity:</strong> <span id="summaryQty">1</span></p>
+                            <p style="font-size: 1.1rem; color: #FF6B35;"><strong>Total: ₹<span id="totalPrice">0</span></strong></p>
+                        </div>
+
+                        <button type="submit" class="order-submit-btn">Confirm Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Golden Fish Pickles. All rights reserved. Made in Chinnamuttom, Kanyakumari.</p>
+            <div class="social-links">
+                <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
